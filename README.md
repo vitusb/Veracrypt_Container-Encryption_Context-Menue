@@ -3,6 +3,8 @@ Container-Encryption for directory-entries by context-menu and command-line
 
 ### This script is based on the Powershell-Code "[EncryptData.ps1](https://sourceforge.net/projects/veracrypt/files/Contributions/)" by [Mounir IDRASSI](https://github.com/idrassi) with some enhancements.
 
+<img width="775" height="403" alt="grafik" src="https://github.com/user-attachments/assets/80f96e50-dfd3-4a59-bd8f-9405009bc86c" />
+
 ### Features:
 
 - bat-script with embedded Powershell Inline-Code without temp-file creation
