@@ -28,12 +28,14 @@ if defined ARGS set ARGS=%ARGS:$=`$%
 if defined ARGS set ARGS=%ARGS:[=``[%
 if defined ARGS set ARGS=%ARGS:]=``]%
 
-:# The ^ before the first " ensures that the Batch parser does not enter quoted mode
-:# there, but that it enters and exits quoted mode for every subsequent pair of ".
-:# This in turn protects the possible special chars & | < > within quoted arguments.
-:# Then the \ before each pair of " ensures that PowerShell's C command line parser 
-:# considers these pairs as part of the first and only argument following -c.
-:# Cherry on the cake, it's possible to pass a " to PS by entering two "" in the bat args.
+:# The ^ before the first " ensures that the Batch parser does not
+:# enter quoted mode there, but that it enters and exits quoted mode
+:# for every subsequent pair of ". This in turn protects the possible
+:# special chars & | < > within quoted arguments. Then the \ before
+:# each pair of " ensures that PowerShell's C command line parser
+:# considers these pairs as part of the first and only argument
+:# following -c. Cherry on the cake, it's possible to pass a " to PS
+:# by entering two "" in the bat args.
 
 :# --- Batch-Code --- BEGIN ---
 set DOTNET_CLI_TELEMETRY_OPTOUT=1
